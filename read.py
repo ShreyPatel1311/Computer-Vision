@@ -5,7 +5,7 @@ import cv2 as cv
 #cv.waitKey(0)
 
 #Reading videos
-capture = cv.VideoCapture('Videos/623064168.mp4')
+capture = cv.VideoCapture('Videos/Galaxy.mp4')
 
 while True:
     isTrue, frame = capture.read()
