@@ -19,5 +19,13 @@ cv.imshow('Canny Edges', cannyEdges)
 dilate = cv.dilate(cannyEdges, np.ones((7, 7), np.uint8),iterations=1) 
 cv.imshow('Dilated', dilate)
 
+#eroding an image(Inversing the dilation)
+eroded = cv.erode(dilate, np.ones((3, 3), np.uint8), iterations = 3)
+cv.imshow('Eroded', eroded)
+
+#cropping
+crop = img[50:200, 200: 400]
+cv.imshow('Cropped', crop)
+
 cv.waitKey(0)
 cv.destroyAllWindows()
