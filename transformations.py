@@ -25,5 +25,11 @@ cv.imshow('Translated Galaxy', translated_img)
 rotate_img = rotate(img, 60)
 cv.imshow('Rotated Galaxy', rotate_img)
 
+flip = cv.flip(img, 1)          
+# 1 = flip horizontally
+# 0 = flip vertically
+# -1 = flip vertically and horizontally 
+cv.imshow('Flip', flip)
+
 cv.waitKey(0)
 cv.destroyAllWindows()
