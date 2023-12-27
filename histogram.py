@@ -37,7 +37,7 @@ plt.xlabel('Bins')                                        #Bins refers to intens
 plt.ylabel('# of pixels')
 colors = ('b', 'g', 'r')
 for i, col in enumerate(colors):
-    hist = cv.calcHist([resize], [i], masked, [256], [0, 256])
+    hist = cv.calcHist([resize], [i], circle, [256], [0, 256])
     plt.plot(hist, color=col)
     plt.xlim([0, 256])
 plt.show()
